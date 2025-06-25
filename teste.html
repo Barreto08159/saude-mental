@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teste Emocional</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+
+  <main class="max-w-4xl mx-auto py-12 px-6">
+    <h1 class="text-3xl font-bold text-green-700 mb-6 text-center">🧠 Teste de Saúde Emocional</h1>
+    <p class="mb-8 text-center text-lg">
+      Responda sinceramente às perguntas abaixo com <strong>Sim</strong>, <strong>Às vezes</strong> ou <strong>Nunca</strong>.  
+      Esse teste é apenas um apoio e não substitui ajuda profissional.
+    </p>
+
+    <form action="resultado.html" method="GET" class="space-y-6">
+      <!-- Perguntas -->
+      <div class="space-y-6">
+        <!-- Vamos usar um padrão com loop manual -->
+        <div>
+          <p class="font-medium mb-2">1. Você costuma se sentir sobrecarregado com as tarefas escolares?</p>
+          <label><input type="radio" name="q1" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q1" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q1" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">2. Você sente ansiedade antes de provas ou apresentações?</p>
+          <label><input type="radio" name="q2" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q2" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q2" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">3. Você tem dificuldade para dormir por causa de preocupações com a escola?</p>
+          <label><input type="radio" name="q3" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q3" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q3" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">4. Você consegue conversar com alguém quando está se sentindo mal?</p>
+          <label><input type="radio" name="q4" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q4" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q4" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">5. Você se sente sozinho mesmo estando cercado de pessoas?</p>
+          <label><input type="radio" name="q5" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q5" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q5" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">6. Você sente falta de motivação para ir à escola?</p>
+          <label><input type="radio" name="q6" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q6" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q6" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">7. Você sente que está sempre cansado, mesmo depois de dormir?</p>
+          <label><input type="radio" name="q7" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q7" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q7" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">8. Você tem pensamentos negativos com frequência?</p>
+          <label><input type="radio" name="q8" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q8" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q8" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">9. Você consegue se concentrar bem durante as aulas?</p>
+          <label><input type="radio" name="q9" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q9" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q9" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">10. Você sente prazer em atividades que antes gostava?</p>
+          <label><input type="radio" name="q10" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q10" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q10" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">11. Você sente que tem apoio dos seus colegas?</p>
+          <label><input type="radio" name="q11" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q11" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q11" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">12. Você já pensou em desistir da escola por causa do estresse?</p>
+          <label><input type="radio" name="q12" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q12" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q12" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">13. Você sente que tem tempo para cuidar de si mesmo?</p>
+          <label><input type="radio" name="q13" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q13" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q13" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">14. Você costuma se alimentar bem durante a rotina escolar?</p>
+          <label><input type="radio" name="q14" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q14" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q14" value="nunca"> Nunca</label>
+        </div>
+
+        <div>
+          <p class="font-medium mb-2">15. Você já procurou ajuda emocional de forma voluntária?</p>
+          <label><input type="radio" name="q15" value="sim" required> Sim</label><br>
+          <label><input type="radio" name="q15" value="as_vezes"> Às vezes</label><br>
+          <label><input type="radio" name="q15" value="nunca"> Nunca</label>
+        </div>
+      </div>
+
+      <!-- Botão de envio -->
+      <div class="text-center mt-10">
+        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition focus:outline-none focus:ring-2 focus:ring-green-500">
+          ✅ Concluir e Ver Resultado
+        </button>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>
