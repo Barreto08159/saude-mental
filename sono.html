@@ -3,86 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saúde Mental Escolar</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Dormir Melhor - Saúde Mental Escolar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-green-50 text-gray-800 font-sans">
 
-  <!-- Cabeçalho -->
-  <header class="bg-blue-600 text-white shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">Saúde Mental Escolar</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Início</a>
-        <a href="dicas-estudo.html" class="hover:underline">Dicas de Estudo</a>
-        <a href="teste.html" class="hover:underline">Teste</a>
-        <a href="apoio.html" class="hover:underline">Apoio</a>
-        <a href="entrar.html" class="hover:underline">Entrar</a>
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">Saúde Mental Escolar</h1>
+      <nav>
+        <a href="index.html" class="text-green-600 hover:underline font-medium">Início</a>
       </nav>
     </div>
   </header>
 
-  <!-- Seção inicial -->
-  <section class="bg-blue-100 py-16 text-center">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">Bem-vindo ao nosso projeto</h2>
-      <p class="mb-6">Aqui você encontra dicas, informações e apoio para cuidar da sua saúde mental durante a vida escolar.</p>
-      <a href="teste.html" class="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700">Fazer Teste Emocional</a>
-    </div>
-  </section>
+  <!-- Main Content -->
+  <main class="pt-28 max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
-  <!-- Cards principais -->
-  <main class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 py-12 px-4">
+    <!-- Conteúdo de Sono -->
+    <section class="text-lg leading-relaxed space-y-6">
+      <h2 class="text-4xl font-bold text-green-700">Dormir Melhor</h2>
+      <p>O sono é essencial para a saúde e bem-estar, principalmente para estudantes. Ele ajuda na consolidação da memória, recuperação física e equilíbrio emocional.</p>
+      <p>Adolescentes precisam de 8 a 10 horas de sono por noite, mas o uso de eletrônicos, estudos e rotina irregular podem atrapalhar.</p>
 
-    <!-- Dicas de Estudo -->
-    <div class="bg-white rounded-lg shadow overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=60"
-           alt="Estudante lendo e estudando com livros"
-           class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Dicas de Estudo</h3>
-        <p class="mb-4">Técnicas simples para melhorar a concentração e organizar melhor o tempo de estudo.</p>
-        <a href="dicas-estudo.html" class="text-blue-600 font-semibold hover:underline">Ler mais</a>
-      </div>
-    </div>
+      <h3 class="text-2xl font-semibold text-green-600">Consequências da falta de sono</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Dificuldade de concentração e aprendizagem.</li>
+        <li>Mais irritabilidade, ansiedade e alterações de humor.</li>
+        <li>Risco maior de problemas de saúde física.</li>
+        <li>Maior propensão a acidentes e cansaço constante.</li>
+      </ul>
 
-    <!-- Sono (IMAGEM CORRIGIDA) -->
-    <div class="bg-white rounded-lg shadow overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=600&q=60"
-           alt="Estudante dormindo na escrivaninha com livros ao lado"
-           class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Sono</h3>
-        <p class="mb-4">Entenda como o descanso é essencial para manter o equilíbrio emocional e o rendimento escolar.</p>
-        <a href="sono.html" class="text-blue-600 font-semibold hover:underline">Ler mais</a>
-      </div>
-    </div>
-
-    <!-- Alimentação -->
-    <div class="bg-white rounded-lg shadow overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=600&q=60"
-           alt="Prato com frutas e vegetais coloridos"
-           class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Alimentação</h3>
-        <p class="mb-4">Como a alimentação saudável pode impactar seu humor e disposição para os estudos.</p>
-        <a href="alimentacao.html" class="text-blue-600 font-semibold hover:underline">Ler mais</a>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- Apoio -->
-  <section class="bg-blue-50 py-12 text-center">
-    <h3 class="text-2xl font-semibold mb-4">Precisa conversar com alguém?</h3>
-    <p class="mb-6">Se não estiver se sentindo bem, não enfrente isso sozinho. Procure ajuda.</p>
-    <a href="apoio.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Contatos de Apoio</a>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="bg-blue-600 text-white text-center py-4 mt-12">
-    <p>&copy; 2025 Saúde Mental Escolar - Projeto de TCC</p>
-  </footer>
-
-</body>
-</html>
+      <h3 class="text-2xl font-semibold text-green-600">Dicas práticas para dormir melhor</h3>
+      <ul class="list-disc list-insi
