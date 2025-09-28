@@ -1,150 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saúde Mental Escolar - Apoio e dicas para estudantes</title>
-  <meta name="description" content="Plataforma para apoiar a saúde mental dos estudantes com dicas, testes emocionais e contatos de apoio." />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde Mental Escolar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-green-50 text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50" role="banner">
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-green-600">Saúde Mental Escolar</h1>
-      <nav aria-label="Menu principal">
-        <a href="entrar.html" class="text-green-600 hover:underline font-medium focus:outline-none focus:ring-2 focus:ring-green-600 rounded">
-          Entrar
-        </a>
+      <nav>
+        <a href="entrar.html" class="text-green-600 hover:underline font-medium">Entrar</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main content -->
-  <main class="pt-28 pb-20 px-4" role="main">
+  <!-- Main Content -->
+  <main class="pt-28 pb-20 px-4 max-w-7xl mx-auto">
 
-    <!-- Hero com busca funcional -->
-    <section class="text-center mb-12" aria-label="Busca de ajuda">
+    <!-- Busca -->
+    <section class="text-center mb-12">
       <h2 class="text-3xl font-bold text-green-700 mb-4">Como podemos te ajudar hoje?</h2>
-
-      <div class="flex justify-center gap-2 flex-wrap">
-        <input
-          type="search"
-          id="campoBusca"
-          placeholder="Ex: tô com estresse, quero estudar melhor..."
-          aria-label="Campo de busca"
-          class="w-full max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400"
-        />
-        <button
-          onclick="buscarAjuda()"
-          class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600"
-        >
-          Buscar
-        </button>
+      <div class="relative flex justify-center">
+        <input type="search" id="campoBusca" placeholder="Digite algo para pesquisar..." 
+          class="w-full max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400"/>
+        <div id="resultadosBusca" class="absolute bg-white border border-gray-300 mt-1 rounded shadow w-full max-w-md hidden z-50"></div>
       </div>
     </section>
 
     <!-- Categorias -->
-    <section class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" aria-label="Categorias de serviços">
-      <a href="conversar.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block focus:outline-none focus:ring-2 focus:ring-green-600" tabindex="0">
-        <h3 class="text-xl font-semibold text-green-600 mb-2">💬 Conversar com Alguém</h3>
+    <section class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <a href="conversar.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Conversar com Alguém</h3>
         <p>Encontre canais de escuta e apoio emocional.</p>
       </a>
-      <a href="teste.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block focus:outline-none focus:ring-2 focus:ring-green-600" tabindex="0">
-        <h3 class="text-xl font-semibold text-green-600 mb-2">🧠 Teste Emocional</h3>
+      <a href="teste.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Teste Emocional</h3>
         <p>Faça um teste para entender como você está se sentindo.</p>
       </a>
-      <a href="dicas-estudo.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block focus:outline-none focus:ring-2 focus:ring-green-600" tabindex="0">
-        <h3 class="text-xl font-semibold text-green-600 mb-2">📚 Dicas de Estudo</h3>
+      <a href="dicas-estudo.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Dicas de Estudo</h3>
         <p>Descubra estratégias para estudar com menos estresse.</p>
       </a>
-      <a href="sono.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block focus:outline-none focus:ring-2 focus:ring-green-600" tabindex="0">
-        <h3 class="text-xl font-semibold text-green-600 mb-2">🛌 Dormir Melhor</h3>
+      <a href="sono.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Dormir Melhor</h3>
         <p>Dicas práticas para melhorar a qualidade do sono.</p>
       </a>
-      <a href="alimentacao.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block focus:outline-none focus:ring-2 focus:ring-green-600" tabindex="0">
-        <h3 class="text-xl font-semibold text-green-600 mb-2">🍎 Alimentação Saudável</h3>
-        <p>Saiba como sua alimentação pode impactar seu humor.</p>
+      <a href="alimentacao.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Alimentação Saudável</h3>
+        <p>Saiba como sua alimentação impacta seu humor.</p>
       </a>
-      <a href="apoio.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block focus:outline-none focus:ring-2 focus:ring-green-600" tabindex="0">
-        <h3 class="text-xl font-semibold text-green-600 mb-2">📞 Contatos de Apoio</h3>
+      <a href="apoio.html" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition block">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Contatos de Apoio</h3>
         <p>Veja uma lista de apoio emocional e serviços disponíveis.</p>
-      </a>
-    </section>
-
-    <!-- Chamada para ação -->
-    <section class="mt-16 text-center" aria-label="Chamada para fazer teste emocional">
-      <h3 class="text-2xl font-semibold text-green-700 mb-4">Quer saber como está sua saúde emocional?</h3>
-      <a
-        href="teste.html"
-        class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition focus:outline-none focus:ring-2 focus:ring-green-600"
-      >
-        Fazer Teste Agora
       </a>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-white text-center text-sm text-gray-500 py-6 mt-12" role="contentinfo">
+  <footer class="bg-white text-center text-sm text-gray-500 py-6 mt-12">
     Projeto de Saúde Mental Escolar • 2025
   </footer>
 
-  <!-- Script de busca funcional -->
+  <!-- Script de busca profissional -->
   <script>
-    function buscarAjuda() {
-      const termo = document.getElementById('campoBusca').value.toLowerCase();
+    const paginas = [
+      { titulo: "Dormir Melhor", url: "sono.html", descricao: "Dicas para melhorar a qualidade do sono e aumentar a concentração." },
+      { titulo: "Dicas de Estudo", url: "dicas-estudo.html", descricao: "Estratégias para organizar os estudos e reduzir o estresse." },
+      { titulo: "Alimentação Saudável", url: "alimentacao.html", descricao: "Como a alimentação impacta sua disposição e humor." },
+      { titulo: "Contatos de Apoio", url: "apoio.html", descricao: "Lista de serviços e profissionais para apoio emocional." },
+      { titulo: "Teste Emocional", url: "teste.html", descricao: "Teste para avaliar seu estado emocional e receber dicas." },
+      { titulo: "Conversar com Alguém", url: "conversar.html", descricao: "Encontre canais de escuta e apoio emocional." }
+    ];
 
-      if (
-        termo.includes("sono") ||
-        termo.includes("dormir") ||
-        termo.includes("descansar")
-      ) {
-        window.location.href = "sono.html";
-      } else if (
-        termo.includes("teste") ||
-        termo.includes("emocional") ||
-        termo.includes("sentindo") ||
-        termo.includes("estresse") ||
-        termo.includes("ansiedade") ||
-        termo.includes("como estou")
-      ) {
-        window.location.href = "teste.html";
-      } else if (
-        termo.includes("alimentação") ||
-        termo.includes("comida") ||
-        termo.includes("nutrição") ||
-        termo.includes("alimentar")
-      ) {
-        window.location.href = "alimentacao.html";
-      } else if (
-        termo.includes("ajuda") ||
-        termo.includes("apoio") ||
-        termo.includes("conversar") ||
-        termo.includes("falar com alguém") ||
-        termo.includes("não estou bem")
-      ) {
-        window.location.href = "conversar.html";
-      } else if (
-        termo.includes("estudo") ||
-        termo.includes("estudar") ||
-        termo.includes("dica") ||
-        termo.includes("prova") ||
-        termo.includes("aprender")
-      ) {
-        window.location.href = "dicas-estudo.html";
-      } else if (
-        termo.includes("contato") ||
-        termo.includes("número") ||
-        termo.includes("telefone") ||
-        termo.includes("cvv")
-      ) {
-        window.location.href = "apoio.html";
-      } else {
-        alert("Nenhuma categoria correspondente foi encontrada. Tente frases como 'Estou estressado', 'Preciso dormir melhor', 'Como estudar'...");
+    const campoBusca = document.getElementById("campoBusca");
+    const resultadosDiv = document.getElementById("resultadosBusca");
+
+    campoBusca.addEventListener("input", () => {
+      const termo = campoBusca.value.toLowerCase();
+      resultadosDiv.innerHTML = "";
+
+      if (termo.length === 0) {
+        resultadosDiv.style.display = "none";
+        return;
       }
-    }
+
+      const resultados = paginas.filter(p =>
+        p.titulo.toLowerCase().includes(termo) ||
+        p.descricao.toLowerCase().includes(termo)
+      );
+
+      if (resultados.length === 0) {
+        resultadosDiv.innerHTML = "<p class='p-2 text-gray-500'>Nenhum resultado encontrado</p>";
+      } else {
+        resultados.forEach(r => {
+          const link = document.createElement("a");
+          link.href = r.url;
+          link.innerHTML = `<strong>${r.titulo}</strong><br><span class="text-gray-500 text-sm">${r.descricao}</span>`;
+          link.className = "block p-2 hover:bg-green-100 rounded";
+          resultadosDiv.appendChild(link);
+        });
+      }
+
+      resultadosDiv.style.display = "block";
+    });
+
+    // Ocultar lista ao clicar fora
+    document.addEventListener("click", (e) => {
+      if (!campoBusca.contains(e.target) && !resultadosDiv.contains(e.target)) {
+        resultadosDiv.style.display = "none";
+      }
+    });
   </script>
 
 </body>
