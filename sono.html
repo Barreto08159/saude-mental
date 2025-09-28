@@ -1,165 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🛌 Dormir Melhor - Saúde Mental Escolar</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde Mental Escolar</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
+<body class="bg-gray-100 text-gray-900">
 
-  <!-- Header -->
-  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50" role="banner">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-600">Saúde Mental Escolar</h1>
-      <nav aria-label="Menu principal">
-        <a href="index.html" class="text-green-600 hover:underline font-medium focus:outline-none focus:ring-2 focus:ring-green-600 rounded">
-          Início
-        </a>
+  <!-- Cabeçalho -->
+  <header class="bg-blue-600 text-white shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Saúde Mental Escolar</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Início</a>
+        <a href="dicas-estudo.html" class="hover:underline">Dicas de Estudo</a>
+        <a href="teste.html" class="hover:underline">Teste</a>
+        <a href="apoio.html" class="hover:underline">Apoio</a>
+        <a href="entrar.html" class="hover:underline">Entrar</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="pt-28 max-w-5xl mx-auto px-6 pb-20 space-y-12">
+  <!-- Seção inicial -->
+  <section class="bg-blue-100 py-16 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Bem-vindo ao nosso projeto</h2>
+      <p class="mb-6">Aqui você encontra dicas, informações e apoio para cuidar da sua saúde mental durante a vida escolar.</p>
+      <a href="teste.html" class="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700">Fazer Teste Emocional</a>
+    </div>
+  </section>
 
-    <!-- Seção com texto e imagem lado a lado -->
-    <section class="flex flex-col md:flex-row items-center gap-8">
-      
-      <div class="md:w-1/2 text-lg leading-relaxed space-y-6">
-        <h2 class="text-4xl font-bold text-green-700">🛌 Dormir Melhor</h2>
-        <p>
-          O sono é um componente essencial da nossa saúde e bem-estar, especialmente para estudantes em idade escolar. Durante o sono, nosso corpo passa por processos de recuperação física, enquanto o cérebro realiza atividades importantes para a consolidação da memória e o processamento emocional. Dormir bem contribui diretamente para um melhor desempenho acadêmico e para a saúde mental equilibrada.
-        </p>
-
-        <p>
-          Para adolescentes, que estão em uma fase de muitas mudanças hormonais e emocionais, o sono de qualidade é ainda mais fundamental. No entanto, devido às demandas escolares, uso intenso de eletrônicos e hábitos irregulares, muitos jovens enfrentam dificuldades para ter um descanso adequado. Essa privação de sono pode acarretar sérios problemas no dia a dia, afetando o aprendizado, a concentração e o humor.
-        </p>
-
-        <p>
-          Por isso, é muito importante conhecer as melhores práticas para melhorar a qualidade do sono e entender os benefícios que isso traz para a vida escolar e pessoal.
-        </p>
+  <!-- Cards principais -->
+  <main class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 py-12 px-4">
+    
+    <!-- Dicas de Estudo -->
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=60"
+        alt="Estudante lendo e estudando com livros"
+        class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Dicas de Estudo</h3>
+        <p class="mb-4">Técnicas simples para melhorar a concentração e organizar melhor o tempo de estudo.</p>
+        <a href="dicas-estudo.html" class="text-blue-600 font-semibold hover:underline">Ler mais</a>
       </div>
+    </div>
 
-      <figure class="md:w-1/2 max-w-md mx-auto">
-        <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60"
-          alt="Pessoa dormindo em uma cama, coberta com cobertor branco"
-          class="rounded-lg shadow-lg w-full"
-          loading="lazy"
-        />
-        <figcaption class="text-center text-sm text-gray-600 mt-2">Imagem: Pessoa dormindo em cama confortável</figcaption>
-      </figure>
+    <!-- Sono -->
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=600&q=60"
+        alt="Estudante dormindo na escrivaninha com livros ao lado"
+        class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Sono</h3>
+        <p class="mb-4">Entenda como o descanso é essencial para manter o equilíbrio emocional e o rendimento escolar.</p>
+        <a href="sono.html" class="text-blue-600 font-semibold hover:underline">Ler mais</a>
+      </div>
+    </div>
 
-    </section>
-
-    <!-- Conteúdo normal em bloco abaixo -->
-    <section class="space-y-10 text-lg leading-relaxed">
-
-      <article>
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Por que o sono é tão importante para estudantes?</h3>
-        <p class="mb-4">
-          O sono possui um papel vital em vários processos biológicos e psicológicos, tais como:
-        </p>
-        <ul class="list-disc list-inside space-y-3">
-          <li><strong>Consolidação da memória:</strong> durante o sono, o cérebro processa e armazena as informações adquiridas durante o dia, facilitando a aprendizagem e a fixação do conteúdo estudado.</li>
-          <li><strong>Regulação emocional:</strong> um sono adequado ajuda a controlar as emoções, prevenindo ansiedade, irritabilidade e depressão.</li>
-          <li><strong>Recuperação física:</strong> o corpo utiliza o período de sono para reparar tecidos, fortalecer o sistema imunológico e restaurar energia.</li>
-          <li><strong>Manutenção do equilíbrio hormonal:</strong> o sono influencia hormônios relacionados ao apetite, ao crescimento e ao estresse, essenciais para o desenvolvimento saudável.</li>
-          <li><strong>Melhora da concentração e atenção:</strong> quem dorme bem tem mais foco e capacidade para realizar tarefas acadêmicas e atividades diárias.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Consequências da falta de sono</h3>
-        <p class="mb-4">
-          A privação do sono ou o sono de má qualidade trazem diversos prejuízos que afetam a vida do estudante em vários aspectos:
-        </p>
-        <ul class="list-disc list-inside space-y-3">
-          <li><strong>Redução do desempenho acadêmico:</strong> dificuldade de concentração, esquecimento e menor capacidade de resolver problemas.</li>
-          <li><strong>Aumento da irritabilidade e ansiedade:</strong> o cérebro cansado reage de forma mais intensa ao estresse e a desafios emocionais.</li>
-          <li><strong>Alterações no humor e comportamento:</strong> pode haver maior predisposição à depressão, impulsividade e isolamento social.</li>
-          <li><strong>Problemas de saúde física:</strong> aumento do risco de obesidade, diabetes e enfraquecimento do sistema imunológico.</li>
-          <li><strong>Comprometimento do sistema imunológico:</strong> dificuldade para se recuperar de doenças comuns, como gripes e resfriados.</li>
-          <li><strong>Maior propensão a acidentes:</strong> fadiga e falta de atenção aumentam o risco de acidentes no trânsito e em outras situações do cotidiano.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Qual a quantidade ideal de sono para adolescentes?</h3>
-        <p class="mb-4">
-          Segundo especialistas em saúde, adolescentes entre 14 e 17 anos precisam, idealmente, de 8 a 10 horas de sono por noite para manter o bom funcionamento do organismo e da mente. Dormir menos do que isso pode prejudicar o rendimento escolar e o equilíbrio emocional.
-        </p>
-        <p>
-          É importante não apenas a quantidade, mas a qualidade do sono — ou seja, que esse tempo seja contínuo, sem muitas interrupções, e em um ambiente adequado.
-        </p>
-      </article>
-
-      <article>
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Dicas práticas para melhorar o sono</h3>
-        <p class="mb-4">
-          A seguir, veja algumas estratégias eficazes para ajudar você a dormir melhor e acordar mais disposto:
-        </p>
-        <ol class="list-decimal list-inside space-y-4">
-          <li><strong>Estabeleça uma rotina regular:</strong> tente ir para a cama e acordar sempre nos mesmos horários, mesmo nos fins de semana, para ajudar seu corpo a criar um ritmo natural.</li>
-          <li><strong>Crie um ambiente propício ao sono:</strong> mantenha seu quarto escuro, silencioso e com temperatura agradável. Use cortinas blackout se necessário e evite barulhos altos.</li>
-          <li><strong>Evite usar aparelhos eletrônicos antes de dormir:</strong> celulares, tablets e computadores emitem luz azul que atrapalha a produção de melatonina, hormônio essencial para o sono.</li>
-          <li><strong>Pratique atividades relaxantes antes de dormir:</strong> ler um livro, ouvir música calma, tomar um banho morno ou meditar ajudam a preparar seu corpo para o descanso.</li>
-          <li><strong>Cuidado com a alimentação:</strong> evite café, chá preto, energéticos e alimentos pesados pelo menos 3 horas antes de ir dormir.</li>
-          <li><strong>Faça exercícios físicos regularmente:</strong> a prática de esportes melhora a qualidade do sono, mas evite exercícios intensos perto da hora de dormir.</li>
-          <li><strong>Evite cochilos longos durante o dia:</strong> se sentir necessidade de descansar, limite o cochilo a 20-30 minutos para não atrapalhar o sono noturno.</li>
-          <li><strong>Gerencie o estresse e a ansiedade:</strong> técnicas como respiração profunda, organização das tarefas e mindfulness ajudam a acalmar a mente.</li>
-          <li><strong>Evite consumo excessivo de líquidos à noite:</strong> para reduzir interrupções causadas pela necessidade de ir ao banheiro.</li>
-        </ol>
-      </article>
-
-      <article>
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Como identificar se você está com sono de má qualidade?</h3>
-        <p class="mb-4">
-          Fique atento a alguns sinais que indicam que seu sono não está sendo suficiente ou restaurador, como:
-        </p>
-        <ul class="list-disc list-inside space-y-3">
-          <li>Dificuldade para acordar pela manhã, mesmo após várias horas dormindo.</li>
-          <li>Sensação constante de cansaço durante o dia.</li>
-          <li>Dificuldade de concentração e perda de memória.</li>
-          <li>Sonolência em momentos inapropriados, como na aula ou durante estudos.</li>
-          <li>Alterações de humor, irritabilidade e ansiedade frequentes.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Quando procurar ajuda profissional?</h3>
-        <p class="mb-4">
-          Caso você apresente dificuldade persistente para dormir, sensação constante de cansaço ou outros sintomas que atrapalham seu dia a dia, é importante buscar ajuda de um profissional da saúde, como um médico, psicólogo ou especialista em sono.
-        </p>
-        <p>
-          Algumas condições como insônia, apneia do sono e transtornos do ritmo circadiano precisam de acompanhamento e tratamento adequados.
-        </p>
-      </article>
-
-      <article>
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Benefícios de dormir bem para sua vida escolar</h3>
-        <p class="mb-4">
-          Quando você consegue ter um sono de qualidade, os benefícios para sua vida escolar são enormes:
-        </p>
-        <ul class="list-disc list-inside space-y-3">
-          <li>Mais disposição para participar das aulas e realizar as tarefas.</li>
-          <li>Maior facilidade para memorizar conteúdos e resolver problemas.</li>
-          <li>Melhor controle emocional para lidar com provas e pressão.</li>
-          <li>Mais energia para praticar esportes e atividades extracurriculares.</li>
-          <li>Redução do estresse e da ansiedade causados por estudos intensos.</li>
-        </ul>
-      </article>
-
-    </section>
-
-    <section class="text-center mt-12">
-      <a href="index.html" class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg shadow hover:bg-green-700 transition focus:outline-none focus:ring-2 focus:ring-green-600">
-        ← Voltar para o Início
-      </a>
-    </section>
+    <!-- Alimentação -->
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=600&q=60"
+        alt="Prato com frutas e vegetais coloridos"
+        class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Alimentação</h3>
+        <p class="mb-4">Como a alimentação saudável pode impactar seu humor e disposição para os estudos.</p>
+        <a href="alimentacao.html" class="text-blue-600 font-semibold hover:underline">Ler mais</a>
+      </div>
+    </div>
 
   </main>
+
+  <!-- Apoio -->
+  <section class="bg-blue-50 py-12 text-center">
+    <h3 class="text-2xl font-semibold mb-4">Precisa conversar com alguém?</h3>
+    <p class="mb-6">Se não estiver se sentindo bem, não enfrente isso sozinho. Procure ajuda.</p>
+    <a href="apoio.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Contatos de Apoio</a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-blue-600 text-white text-center py-4 mt-12">
+    <p>&copy; 2025 Saúde Mental Escolar - Projeto de TCC</p>
+  </footer>
 
 </body>
 </html>
